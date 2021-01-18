@@ -1,0 +1,58 @@
+目的：实现支持数据驱动的GUI测试及接口测试；实现支持关键字驱动的GUI和接口测试。
+1.创建一个包，tools或者util，这里的主要功能是提供对数据的操作，包括文件操作、数据库操作和日志操作等基础功能的封装。
+创建util模块
+
+（1）日志操作类：class LogUtil.
+（2）文件操作类：class FileUtil。包含的主要方法：
+    def get_txt(cls, path):
+            """
+            读取普通文本文件内容，返回字符串
+            :param path: 文本文件路径
+            :return: 文本文件内容字符串
+            """
+
+    def get_json(cls, path):
+        """
+            从json格式文件中读取原始格式内容并返回
+        :param path:
+            要读取的json文件路径
+        :return:
+            原始数据类型的数据
+        """
+
+    def get_excel(cls, path):
+        """
+        从excel文件中读取测试信息
+        :param path:测试信息配置文件路径及文件名
+        :return: 测试信息的json格式
+        """
+
+ （3）数据库操作类：class DBUtil。包含的主要方法：
+    def get_conn(self):
+        """
+        连接数据库返回数据库连接对象
+        :param db_info:数据库配置信息
+        :return:数据库连接对象
+        """
+
+    def query_one(self, sql):
+        """
+        查询一条结果
+        :param sql: 查询语句
+        :return: 单条结果集，以元组方式返回
+        """
+
+    def query_all(self, sql):
+        """
+        查询多条结果
+        :param sql: 查询语句
+        :return: 多条结果集，以二维元组方式返回
+        """
+
+    def update_db(self, sql):
+        """
+        增删改操作
+        :param sql: DML语句
+        :return:执行成功或失败的标记
+        """
+========================================

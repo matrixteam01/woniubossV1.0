@@ -1,0 +1,106 @@
+2021-01-14 17:09:15,821 - util - INFO - **********************************************************
+
+2021-01-14 17:09:15,824 - util - INFO - **********************************************************
+
+2021-01-14 17:09:15,824 - util - INFO - **********************************************************
+
+2021-01-14 17:09:44,352 - util - ERROR - insert into woniuboss_test_result(case_version,case_id,module_name,test_type,api_url,request_method,case_desc,test_data,expect,result_msg,error_msg,error_img_path) values("V1.0", "add_resource_02", "training_resource", "ui","", "", "1.点击【新增】按钮;
+2.输入已添加成功的电话号码，其它输入合法值；
+3.点击【保存】按钮。", "{'cus.tel': '18391828589', 'cus.name': '小白', 'cus.last_status': '新入库', 'cus.source': '自然流量'}", "添加资源重复", "test error","Traceback (most recent call last):
+  File "D:/workspace/pycharmworkspace/WNXA041/WTFV2/testcase/training_resource_test.py", line 25, in test_add_training_resource
+    actual = self.tr.get_add_resouce_result(test_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 92, in get_add_resouce_result
+    self.do_add_resouce(resouce_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 82, in do_add_resouce
+    self.click_add_resource_button()
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 28, in click_add_resource_button
+    add_resource_button = Setup.get_page_element(self.driver, self.section, 'add_resource_button')
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\setup.py", line 39, in get_page_element
+    return UIUtil.find_element_by_attr(driver, main_page_element_attr)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\tools\ui_util.py", line 49, in find_element_by_attr
+    return driver.find_element(getattr(By, element_attr[0]), element_attr[1])
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/div[8]/div[2]/div/div/div/button[1]
+
+","../report/V1.0/screenshot/20210114_170944.png")语句错误，执行失败
+2021-01-14 17:09:44,352 - util - ERROR - insert into woniuboss_test_result(case_version,case_id,module_name,test_type,api_url,request_method,case_desc,test_data,expect,result_msg,error_msg,error_img_path) values("V1.0", "add_resource_02", "training_resource", "ui","", "", "1.点击【新增】按钮;
+2.输入已添加成功的电话号码，其它输入合法值；
+3.点击【保存】按钮。", "{'cus.tel': '18391828589', 'cus.name': '小白', 'cus.last_status': '新入库', 'cus.source': '自然流量'}", "添加资源重复", "test error","Traceback (most recent call last):
+  File "D:/workspace/pycharmworkspace/WNXA041/WTFV2/testcase/training_resource_test.py", line 25, in test_add_training_resource
+    actual = self.tr.get_add_resouce_result(test_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 92, in get_add_resouce_result
+    self.do_add_resouce(resouce_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 82, in do_add_resouce
+    self.click_add_resource_button()
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 28, in click_add_resource_button
+    add_resource_button = Setup.get_page_element(self.driver, self.section, 'add_resource_button')
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\setup.py", line 39, in get_page_element
+    return UIUtil.find_element_by_attr(driver, main_page_element_attr)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\tools\ui_util.py", line 49, in find_element_by_attr
+    return driver.find_element(getattr(By, element_attr[0]), element_attr[1])
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/div[8]/div[2]/div/div/div/button[1]
+
+","../report/V1.0/screenshot/20210114_170944.png")语句错误，执行失败
+2021-01-14 17:09:44,354 - util - ERROR - sql执行错误
+2021-01-14 17:09:44,354 - util - ERROR - sql执行错误
+2021-01-14 17:09:50,519 - util - ERROR - insert into woniuboss_test_result(case_version,case_id,module_name,test_type,api_url,request_method,case_desc,test_data,expect,result_msg,error_msg,error_img_path) values("V1.0", "add_resource_03", "training_resource", "ui","", "", "1.点击【新增】按钮;
+2.不填写电话号码，其它输入合法值；
+3.点击【保存】按钮。", "{'cus.tel': '', 'cus.name': '小白', 'cus.last_status': '新入库', 'cus.source': '自然流量'}", "添加资源失败", "test error","Traceback (most recent call last):
+  File "D:/workspace/pycharmworkspace/WNXA041/WTFV2/testcase/training_resource_test.py", line 25, in test_add_training_resource
+    actual = self.tr.get_add_resouce_result(test_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 92, in get_add_resouce_result
+    self.do_add_resouce(resouce_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 82, in do_add_resouce
+    self.click_add_resource_button()
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 28, in click_add_resource_button
+    add_resource_button = Setup.get_page_element(self.driver, self.section, 'add_resource_button')
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\setup.py", line 39, in get_page_element
+    return UIUtil.find_element_by_attr(driver, main_page_element_attr)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\tools\ui_util.py", line 49, in find_element_by_attr
+    return driver.find_element(getattr(By, element_attr[0]), element_attr[1])
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/div[8]/div[2]/div/div/div/button[1]
+
+","../report/V1.0/screenshot/20210114_170950.png")语句错误，执行失败
+2021-01-14 17:09:50,519 - util - ERROR - insert into woniuboss_test_result(case_version,case_id,module_name,test_type,api_url,request_method,case_desc,test_data,expect,result_msg,error_msg,error_img_path) values("V1.0", "add_resource_03", "training_resource", "ui","", "", "1.点击【新增】按钮;
+2.不填写电话号码，其它输入合法值；
+3.点击【保存】按钮。", "{'cus.tel': '', 'cus.name': '小白', 'cus.last_status': '新入库', 'cus.source': '自然流量'}", "添加资源失败", "test error","Traceback (most recent call last):
+  File "D:/workspace/pycharmworkspace/WNXA041/WTFV2/testcase/training_resource_test.py", line 25, in test_add_training_resource
+    actual = self.tr.get_add_resouce_result(test_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 92, in get_add_resouce_result
+    self.do_add_resouce(resouce_data)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 82, in do_add_resouce
+    self.click_add_resource_button()
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\training_resource.py", line 28, in click_add_resource_button
+    add_resource_button = Setup.get_page_element(self.driver, self.section, 'add_resource_button')
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\action\setup.py", line 39, in get_page_element
+    return UIUtil.find_element_by_attr(driver, main_page_element_attr)
+  File "D:\workspace\pycharmworkspace\WNXA041\WTFV2\tools\ui_util.py", line 49, in find_element_by_attr
+    return driver.find_element(getattr(By, element_attr[0]), element_attr[1])
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\devtools\python36_64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/div[8]/div[2]/div/div/div/button[1]
+
+","../report/V1.0/screenshot/20210114_170950.png")语句错误，执行失败
+2021-01-14 17:09:50,520 - util - ERROR - sql执行错误
+2021-01-14 17:09:50,520 - util - ERROR - sql执行错误
